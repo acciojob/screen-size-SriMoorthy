@@ -11,7 +11,15 @@
 	<div>
 		<h1 id="sizeInfo"></h1>
 	</div>
-    <script type="text/javascript" src="./script.js">
+<script>
+		function resize() {
+	let screenSize = document.getElementById('sizeInfo');
+    screenSize.textContent = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`
+}
+
+window.addEventListener('resize',resize);
+
+resize();
 </script>
 
 </body>
