@@ -1,5 +1,9 @@
 //your JS code here. If required.
-function load() {
+function resize() {
 	let screenSize = document.getElementById('sizeInfo');
-    screenSize.innerHTML = `Width: ${screen.width} and Height: ${screen.height}`
+    screenSize.textContent = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`
 }
+
+window.addEventListener('resize',resize);
+
+resize();
